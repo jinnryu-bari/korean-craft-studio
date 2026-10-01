@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f7f4ee;
+  --color-surface: #fffdf9;
+  --color-ink: #2a2521;
+  --color-ink-muted: #5c544c;
+  --color-line: #e3dcd1;
+  --color-clay: #8b5335;
+  --color-clay-soft: #f1e6dc;
+  --color-indigo: #2f4858;
+  --color-danger: #a1321f;
+  --color-danger-soft: #fbece8;
+  --color-success: #2f5d45;
+  --color-success-soft: #e8f1eb;
+
+  --font-sans: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif;
+  --font-serif: "Nanum Myeongjo", "Noto Serif KR", "AppleMyungjo", "Batang", serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-indigo);
+  outline-offset: 2px;
+}
